@@ -9,6 +9,7 @@ A powerful 3D modeling and animation software.
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Quick Start](#quick-start)
 - [Features](#features)
 - [Environment Setup](#environment-setup)
   - [System Requirements](#system-requirements)
@@ -36,6 +37,17 @@ A powerful 3D modeling and animation software.
 ## Introduction
 
 V3D Studio is a professional 3D modeling and animation software that integrates 3D modeling, animation, audio processing, and AI integration. Whether you're a beginner or a professional, you can use V3D Studio to quickly create amazing 3D works.
+
+## Quick Start
+
+**No compilation needed - run directly!** The project already includes pre-compiled executable files:
+
+| Version | Path | Size | Description |
+|---------|------|------|-------------|
+| **Release** | `build\bin\Release\v3d_studio.exe` | 86 KB | Recommended, optimized version |
+| **Debug** | `build\bin\Debug\v3d_studio.exe` | - | With debug info |
+
+Simply double-click `build\bin\Release\v3d_studio.exe` to launch the program!
 
 ## Features
 
