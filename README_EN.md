@@ -241,7 +241,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake
 Or use the provided script:
 
 ```bash
-.\check_env.bat
+.\scripts\check_env.bat
 ```
 
 ### Compile the Project
@@ -262,7 +262,7 @@ cmake --build . --config Release
 #### Using Batch Script
 
 ```bash
-..\build_and_test.bat
+..\scripts\build_and_test.bat
 ```
 
 ## Running the Program
@@ -352,13 +352,19 @@ v3d_studio/
 │   ├── io/                   # Input/output
 │   └── modeling/             # Modeling library
 ├── tests/                    # Test code
+├── scripts/                  # Script files
+│   ├── build_and_test.bat    # Build script
+│   ├── check_env.bat         # Environment check script
+│   ├── push_to_gitee.bat     # Push to Gitee
+│   ├── push_to_github.bat    # Push to GitHub
+│   └── ...
 ├── build/                    # Build output directory
 ├── CMakeLists.txt            # CMake build configuration
+├── package.json              # npm build scripts
 ├── README.md                 # Chinese documentation
 ├── README_EN.md              # English documentation
 ├── LICENSE                   # Chinese license
-├── LICENSE_EN                # English license
-└── build_and_test.bat        # Build script
+└── LICENSE_EN                # English license
 ```
 
 ## FAQ
