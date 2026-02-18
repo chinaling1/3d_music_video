@@ -7,16 +7,20 @@ echo.
 
 cd /d "e:\3d"
 
-echo [1/3] Checking git status...
+echo [1/4] Checking git status...
 git status
 echo.
 
-echo [2/3] Creating initial commit...
-git commit -m "Initial commit - V3D Studio with 3D modeling, animation, audio, and AI features"
+echo [2/4] Adding changes...
+git add .
 echo.
 
-echo [3/3] Pushing to GitHub...
-git push -u origin main
+echo [3/4] Committing changes...
+git commit -m "Update README and add push scripts"
+echo.
+
+echo [4/4] Pushing to GitHub...
+git push -u origin master
 echo.
 
 echo ====================================
