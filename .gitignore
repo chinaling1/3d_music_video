@@ -46,4 +46,13 @@ coverage/
 *.d
 *.d.ts
 
-docs/generated/
+docs/generated/ 
+# Personal info reports 
+BUILD_*.md 
+FINAL_*.md 
+PROJECT_*.md 
+ISSUES_*.md 
+TEST_*.md 
+USER_GUIDE.md 
+INSTALLATION_GUIDE.md 
+QUICK_START.md 
