@@ -1,0 +1,31 @@
+{
+  "name": "3d-video-studio",
+  "version": "1.0.0",
+  "description": "Professional 3D video production software with animation, modeling, AI integration, and audio processing",
+  "main": "index.js",
+  "scripts": {
+    "build": "cmake -B build -S . && cmake --build build --config Release",
+    "build-debug": "cmake -B build-debug -S . -DCMAKE_BUILD_TYPE=Debug && cmake --build build-debug --config Debug",
+    "clean": "cmake --build build --target clean",
+    "test": "cd build && ctest --output-on-failure",
+    "install": "cmake --install build",
+    "format": "clang-format -i src/**/*.cpp src/**/*.h",
+    "lint": "cpplint --recursive src/ tests/"
+  },
+  "keywords": [
+    "3d",
+    "animation",
+    "modeling",
+    "video-production",
+    "ai",
+    "audio",
+    "vocaloid",
+    "mmd"
+  ],
+  "author": "3D Video Studio Team",
+  "license": "MIT",
+  "devDependencies": {
+    "clang-format": "^1.8.0",
+    "cpplint": "^1.6.0"
+  }
+}
