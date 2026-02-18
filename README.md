@@ -241,7 +241,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake
 或者使用项目提供的脚本：
 
 ```bash
-.\check_env.bat
+.\scripts\check_env.bat
 ```
 
 ### 编译项目
@@ -262,7 +262,7 @@ cmake --build . --config Release
 #### 使用批处理脚本
 
 ```bash
-..\build_and_test.bat
+..\scripts\build_and_test.bat
 ```
 
 ## 运行程序
@@ -352,13 +352,19 @@ v3d_studio/
 │   ├── io/                   # 输入输出
 │   └── modeling/             # 建模库
 ├── tests/                    # 测试代码
+├── scripts/                  # 脚本文件
+│   ├── build_and_test.bat    # 构建脚本
+│   ├── check_env.bat         # 环境检查脚本
+│   ├── push_to_gitee.bat     # 推送到Gitee
+│   ├── push_to_github.bat    # 推送到GitHub
+│   └── ...
 ├── build/                    # 构建输出目录
 ├── CMakeLists.txt            # CMake 构建配置
+├── package.json              # npm 构建脚本
 ├── README.md                 # 中文说明文档
 ├── README_EN.md              # 英文说明文档
 ├── LICENSE                   # 中文许可证
-├── LICENSE_EN                # 英文许可证
-└── build_and_test.bat        # 构建脚本
+└── LICENSE_EN                # 英文许可证
 ```
 
 ## 常见问题
